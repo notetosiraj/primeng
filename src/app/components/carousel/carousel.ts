@@ -772,7 +772,7 @@ export class Carousel implements AfterContentInit {
         }
 
         if (isCircular && this.page === this.totalDots() - 1 && dir === -1) {
-            totalShiftedItems = -1 * (this.value.length + this._numVisible);
+            totalShiftedItems = -1 * this._numVisible;
             page = 0;
         } else if (isCircular && this.page === 0 && dir === 1) {
             totalShiftedItems = 0;
